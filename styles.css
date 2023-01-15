@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* INICIO GENERAL */
+* {
+    margin:0;
+    padding:0;
+    color:inherit;
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    min-height: 100%;
+    min-width: 700px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    background-color: rgb(232, 221, 181);
+    color: rgb(9, 12, 2);
+    border-style: solid;
+    border-width: 4px;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: rgb(45, 35, 46);
+    color: #fafafa;
+    text-transform:uppercase;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px 5px;
+
+}
+
+.hide {
+    display: none;
+}
+/* FIN GENERAL */
+
+
+
+/* INICIO HEADER*/
+.header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__img {
+    width: 40%;
+    height: 100%;
+    flex-shrink: 1;
+
+}
+
+.header__img img {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+
+.header__name {
+    text-align: center;
+    flex-grow: 1;
+    width: 60%;
+    padding-right: 5%;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
+/* FIN HEADER */
+
+
+
+/* INICIO ELEMENTO MAIN */
+main {
+    display: flex;
+    height: 74vh;
+    width: 100%;
+    min-height: 600px;
+    flex-flow: row nowrap;
+}
+/* FIN ELEMENTO MAIN */
+
+
+
+/* INICIO ASIDE */
+.aside h3 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin: 2% 2% 4% 2%;
+    text-align: center;
+
+}
+.aside p, ul {
+    margin: 1%;
+
+}
+
+.aside {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    text-align: justify;
+}
+.aside span {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.aside__personal-info {
+    height: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: scroll;
+    width: 100%;
+    padding: 2% 6%;
+}
+.aside__personal-info li {
+    padding: 3px;
+}
+
+
+.aside__aditional-info {
+    height: 45%;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: scroll;
+    padding: 3px;
+    width: 100%;
+    padding: 2% 6%;
+}
+
+.aside__social {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1% 6%;
+}
+.aside__social-title {
+    width: 100%;
+    height: 20%;
+}
+
+.aside__social-media {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.aside__social-media .icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aside__social-media a{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aside__social-media img {
+    width: 80%;
+    max-width: auto;
+    max-height: 60px;
+}
+
+/* FIN ASIDE */
+
+
+
+/* INICIO  MAIN (DINSTIGUIR ENTRE LA CLASE .main Y EL main DEL HTML)*/
+h2 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.main {
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 4% 2% 4%;
+    overflow: scroll;
+}
+.main li {
+    list-style-type: disc;
+}
+.main h2 {
+    margin: 10px 0 10px 0;
+}
+
+.main__education {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__work-xp{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/* FIN CLASE MAIN */
+
+
+
+/*INICIO SCROLLBAR*/
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid rgb(4, 3, 15);
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgb(232, 221, 181);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: rgb(232, 221, 181);
+}
+
+::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+/*FIN SCROLLBAR*/
